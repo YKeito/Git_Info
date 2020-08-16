@@ -1,8 +1,8 @@
 # 必要なもの
 + PC
-+ Git hubアカウント作成
 + Git Bashインストール
 + VS Codeインストール
++ Git hubアカウント作成
 
 # 事前準備
 ## Git Bashインストール
