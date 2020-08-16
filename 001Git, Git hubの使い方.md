@@ -5,8 +5,6 @@
 + VS Codeインストール
 
 # 事前準備
-## Git hubアカウント作成
-
 ## Git Bashインストール
 + Git Bashは、Windowsにてコマンドでgitの操作を利用する際に使うターミナル（いわゆる黒い画面）のこと。
   + [Git Bashインストール方法](https://eng-entrance.com/git-install)
@@ -15,7 +13,11 @@
   + [VS Codeインストール方法 MAC OS](https://qiita.com/watamura/items/51c70fbb848e5f956fd6)
   + [VS Codeインストール方法 Windows OS](https://qiita.com/psychoroid/items/7d85ae6bade4a67aedb1)
 
+## Git hubアカウント作成
++ ローカルリポジトリの内容をバックアップするためには、リモートリポジトリを作成する必要があります。以下を参考にアカウントを作成してみましょう。
+  + [Git hubのアカウント作成](https://techacademy.jp/magazine/6235)
+
 # Git, Git hubの使い方
-## [Git hub](https://github.com)の登録
+
 
 
