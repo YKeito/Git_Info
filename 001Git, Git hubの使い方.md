@@ -89,7 +89,7 @@ https://github.com/settings/keys
 
 ## SSH_Configの設定
 
-1.  vi ~/.ssh/configと入力し、configファイルを以下のように記載してください。
+1. `vi ~/.ssh/config`と入力し、configファイルを以下のように記載してください。
 ```
 Host github.hpe.com
   HostName github.hpe.com
@@ -98,12 +98,12 @@ Host github.hpe.com
   IdentityFile ~/.ssh/github_test
 ```
 
-1.  Git Bash上で以下を実行し、パスフレーズを入力してください。
+1. Git Bash上で以下を実行し、パスフレーズを入力してください。
 ```
 ssh -T git@github.hpe.com
 ```
 
-1.  以下のような応答が返ってくるかを確認してください。  
+1. 以下のような応答が返ってくるかを確認してください。  
 ```
 Hi XXXXX! You've successfully authenticated,
 but GitHub does not provide shell access.
