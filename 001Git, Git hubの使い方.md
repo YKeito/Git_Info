@@ -28,20 +28,17 @@
     ```
     * `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
 
-  1-2. .sshディレクトリに移動してください。
-    
+  1-2. .sshディレクトリに移動してください。    
     ```
-    $ cd .ssh;
+    $ cd .ssh
     ```
     
-  1-3. 引き続きGit Bashにて、以下のコマンドを打ち込んでください。
-  
+  1-3. 引き続きGit Bashにて、以下のコマンドを打ち込んでください。  
     ```
     $ ssh-keygen -t rsa -f github_test
     ```
 
-  1-4. 以下の出力が表示されたことが確認出来たら、任意のパスフレーズを入力し、Enterキーを押下してください(セキュリティ上、入力しても表示はされません)。
-  
+  1-4. 以下の出力が表示されたことが確認出来たら、任意のパスフレーズを入力し、Enterキーを押下してください(セキュリティ上、入力しても表示はされません)。  
     ```
     Generating public/private rsa key pair.
     Enter passphrase (empty for no passphrase): (任意のpassphrase) <Enter>
@@ -50,13 +47,11 @@
     * 僕は面倒なので空パスフレーズにしています。（セキュリティを考えるとよくない）
 
   1-5. 再度パスフレーズを入力し、Enterを押下してください。
-  
     ```
     Enter same passphrase again: (任意のpassphrase) <Enter>
     ```
     
   1-6. 以下のような出力がされたかを確認してください。
-  
     ```
     The key's randomart image is:
     +---[RSA 3072]----+
@@ -73,13 +68,11 @@
     ```
     
   1-7. .ssh配下にgithub_test、github_test.pubがあるかを確認してください。
-  
     ```
     $ ls -la 
     ```
     
   1-8. sshキーを表示し、表示された鍵(文字列)をコピーしてください。
-  
     ```
     $ cat github_test.pub
     ```
@@ -95,7 +88,6 @@
 
 3. SSH_Configの設定
   3-1. vi ~/.ssh/configと入力し、configファイルを以下のように記載してください。
-  
     ```
     Host github.hpe.com
         HostName github.hpe.com
@@ -105,13 +97,11 @@
     ```
     
   3-2. Git Bash上で以下を実行し、パスフレーズを入力してください。
-  
     ```
     $ ssh -T git@github.hpe.com
     ```
     
   3-3. 以下のような応答が返ってくるかを確認してください。
-  
     ```
     Hi XXXXX! You've successfully authenticated,
     but GitHub does not provide shell access.
