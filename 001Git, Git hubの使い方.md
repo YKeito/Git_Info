@@ -29,7 +29,7 @@
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000008.bmp)
 1.  以上でリモートリポジトリ作成完了です。
 
-## 1. Git hubにssh接続設定
+## 2. Git hubにssh接続設定
 + ローカルリポジトリからリモートリポジトリに接続するためにはssh接続をできるようにする必要があります。以下を参考に設定してみましょう。
 ### Private Key, Public Keyの作成
 1.  Git Bash上で、.sshというディレクトリがあるかを確認してください。  
@@ -115,7 +115,7 @@
     Hi XXXXX! You've successfully authenticated,
     but GitHub does not provide shell access.
     ```
-## 1. 作成したリモートリポジトリをローカルリポジトリに反映
+## 3. 作成したリモートリポジトリをローカルリポジトリに反映
 + 
 1.  
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000009.bmp)
