@@ -21,7 +21,7 @@
   + [Git hubのアカウント作成](https://techacademy.jp/magazine/6235)
 
 # Git, Git hubの使い方
-+ Private Key, Public Keyの作成
+## Private Key, Public Keyの作成
 1.  Git Bash上で、.sshというディレクトリがあるかを確認してください。  
 ```
 cd; ls -la .ssh/
@@ -77,7 +77,7 @@ ls -la
 cat github_test.pub
 ```
 
-+ Public Keyのupload
+## Public Keyのupload
 
 1.  以下のURLへアクセスしてください。
 
@@ -87,7 +87,7 @@ https://github.com/settings/keys
 
 1.  任意のtitle名を入力し、Add SSH keyを押下します。
 
-+ SSH_Configの設定
+## SSH_Configの設定
 
 1.  vi ~/.ssh/configと入力し、configファイルを以下のように記載してください。
 ```
