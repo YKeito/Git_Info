@@ -79,7 +79,7 @@
 ## Public Keyのupload
 1.  以下のURLへアクセスしてください。
 
-  https://github.com/settings/keys
+    https://github.com/settings/keys
 
 2.  画面右上のNew SSH Keyを押下し、先ほどコピーした鍵をKeyのテキストボックスに貼り付けます。
 
