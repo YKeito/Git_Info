@@ -21,7 +21,12 @@
   + [Git hubのアカウント作成](https://techacademy.jp/magazine/6235)
 
 # Git, Git hubの使い方
+## リモートリポジトリの作成
+初めにローカルリポジトリのデータを保存するためのリモートリポジトリを用意しましょう。
+
+
 ## Private Key, Public Keyの作成
+ローカルリポジトリからリモートリポジトリに接続するためにはssh接続をできるようにする必要があります。以下を参考に設定してみましょう。
 1.  Git Bash上で、.sshというディレクトリがあるかを確認してください。  
     ```
     cd; ls -la .ssh/
@@ -105,5 +110,5 @@
     Hi XXXXX! You've successfully authenticated,
     but GitHub does not provide shell access.
     ```
-
+# 
 
