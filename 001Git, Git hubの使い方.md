@@ -21,16 +21,17 @@
   + [Git hubのアカウント作成](https://techacademy.jp/magazine/6235)
 
 # Git, Git hubの使い方
-## リモートリポジトリの作成
-初めにローカルリポジトリのデータを保存するためのリモートリポジトリを用意しましょう。
+## 1. リモートリポジトリの作成
++ 初めにローカルリポジトリのデータを保存するためのリモートリポジトリを用意しましょう。
 1.  Git hubにログインし、ホームでRepositoriesのタブをクリックし、Newをクリックしてください。
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000005.bmp)
 1.  Repository nameに任意の名前を入力し、Public(リンクさえ知っていれば誰でもアクセスできる状態), Private(リンクを知っていても、権限がない場合アクセスできない状態)を選択し、Initialize this repository with a READMEをクリックし、Create repositoryをクリックしてください。
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000008.bmp)
-1.  以上でリポジトリ作成完了です。
+1.  以上でリモートリポジトリ作成完了です。
 
-## Private Key, Public Keyの作成
-ローカルリポジトリからリモートリポジトリに接続するためにはssh接続をできるようにする必要があります。以下を参考に設定してみましょう。
+## 1. Git hubにssh接続設定
++ ローカルリポジトリからリモートリポジトリに接続するためにはssh接続をできるようにする必要があります。以下を参考に設定してみましょう。
+### Private Key, Public Keyの作成
 1.  Git Bash上で、.sshというディレクトリがあるかを確認してください。  
     ```
     cd; ls -la .ssh/
@@ -85,7 +86,7 @@
     cat github_test.pub
     ```
 
-## Public Keyのupload
+### Public Keyのupload
 1.  以下のURLへアクセスしてください。
 
       https://github.com/settings/keys
@@ -94,7 +95,7 @@
 
 1.  任意のtitle名を入力し、Add SSH keyを押下します。
 
-## SSH_Configの設定
+### SSH_Configの設定
 1. `vi ~/.ssh/config`と入力し、configファイルを以下のように記載してください。
     ```
     Host github.com
@@ -114,7 +115,8 @@
     Hi XXXXX! You've successfully authenticated,
     but GitHub does not provide shell access.
     ```
-## 作成したリモートリポジトリをローカルリポジトリに反映
+## 1. 作成したリモートリポジトリをローカルリポジトリに反映
++ 
 1.  
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000009.bmp)
 
