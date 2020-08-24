@@ -26,10 +26,8 @@
 1.  Git hubにログインし、ホームでRepositoriesのタブをクリックし、Newをクリックしてください。
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000005.bmp)
 1.  Repository nameに任意の名前を入力し、Public(リンクさえ知っていれば誰でもアクセスできる状態), Private(リンクを知っていても、権限がない場合アクセスできない状態)を選択し、Initialize this repository with a READMEをクリックしてください。
-![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000006.bmp)
-1.  
-![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000007.bmp)
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000008.bmp)
+1.  
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000009.bmp)
 
 ## Private Key, Public Keyの作成
