@@ -23,67 +23,67 @@
 # Git, Git hubの使い方
 ## Private Key, Public Keyの作成
 1.  Git Bash上で、.sshというディレクトリがあるかを確認してください。  
-  ```
-  cd; ls -la .ssh/
-  ```
-  `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
+    ```
+    cd; ls -la .ssh/
+    ```
+    `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
 
-2.  .sshディレクトリに移動してください。 
-  ```
-  cd .ssh/
-  ```
-3.  引き続きGit Bashにて、以下のコマンドを打ち込んでください。    
-  ```
-  ssh-keygen -t rsa -f github_test
-  ```
+1.  .sshディレクトリに移動してください。 
+    ```
+    cd .ssh/
+    ```
+1.  引き続きGit Bashにて、以下のコマンドを打ち込んでください。    
+    ```
+    ssh-keygen -t rsa -f github_test
+    ```
 
-4.  以下の出力が表示されたことが確認出来たら、任意のパスフレーズを入力し、Enterキーを押下してください(セキュリティ上、入力しても表示はされません)。  
-  ```
-  Generating public/private rsa key pair.
-  Enter passphrase (empty for no passphrase): (任意のpassphrase) <Enter>
-  ```
-  * パスフレーズとはパスワードのようなものですが, 厳密には桁数やスペースが利用できたりするものです. 推測されないような値を設定しましょう.,
-  * 僕は面倒なので空パスフレーズにしています。（セキュリティを考えるとよくない）
+1.  以下の出力が表示されたことが確認出来たら、任意のパスフレーズを入力し、Enterキーを押下してください(セキュリティ上、入力しても表示はされません)。  
+    ```
+    Generating public/private rsa key pair.
+    Enter passphrase (empty for no passphrase): (任意のpassphrase) <Enter>
+    ```
+    * パスフレーズとはパスワードのようなものですが, 厳密には桁数やスペースが利用できたりするものです. 推測されないような値を設定しましょう.,
+    * 僕は面倒なので空パスフレーズにしています。（セキュリティを考えるとよくない）
 
-5.  再度パスフレーズを入力し、Enterを押下してください。
-  ```
-  Enter same passphrase again: (任意のpassphrase) <Enter>
-  ```
+1.  再度パスフレーズを入力し、Enterを押下してください。
+    ```
+    Enter same passphrase again: (任意のpassphrase) <Enter>
+    ```
 
-6.  以下のような出力がされたかを確認してください。
-  ```
-  The key's randomart image is:
-  +---[RSA 3072]----+
-  |            .+%BO|
-  |       o   . O+@E|
-  |      o + . +.O.+|
-  |       = + o. .+.|
-  |        S o  . . |
-  |     . = o    o  |
-  |      o o .  +   |
-  |         .  + .  |
-  |          oo =o  |
-  +----[SHA256]-----+
-  ```
+1.  以下のような出力がされたかを確認してください。
+    ```
+    The key's randomart image is:
+    +---[RSA 3072]----+
+    |            .+%BO|
+    |       o   . O+@E|
+    |      o + . +.O.+|
+    |       = + o. .+.|
+    |        S o  . . |
+    |     . = o    o  |
+    |      o o .  +   |
+    |         .  + .  |
+    |          oo =o  |
+    +----[SHA256]-----+
+    ```
 
-7.  .ssh配下にgithub_test、github_test.pubがあるかを確認してください。
-  ```
-  ls -la 
-  ```
+1.  .ssh配下にgithub_test、github_test.pubがあるかを確認してください。
+    ```
+    ls -la 
+    ```
 
-8.  sshキーを表示し、表示された鍵(文字列)をコピーしてください。
-  ```
-  cat github_test.pub
-  ```
+1.  sshキーを表示し、表示された鍵(文字列)をコピーしてください。
+    ```
+    cat github_test.pub
+    ```
 
 ## Public Keyのupload
 1.  以下のURLへアクセスしてください。
 
-    https://github.com/settings/keys
+      https://github.com/settings/keys
 
-2.  画面右上のNew SSH Keyを押下し、先ほどコピーした鍵をKeyのテキストボックスに貼り付けます。
+1.  画面右上のNew SSH Keyを押下し、先ほどコピーした鍵をKeyのテキストボックスに貼り付けます。
 
-3.  任意のtitle名を入力し、Add SSH keyを押下します。
+1.  任意のtitle名を入力し、Add SSH keyを押下します。
 
 ## SSH_Configの設定
 1. `vi ~/.ssh/config`と入力し、configファイルを以下のように記載してください。
