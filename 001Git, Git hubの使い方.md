@@ -87,23 +87,23 @@
 
 ## SSH_Configの設定
 1. `vi ~/.ssh/config`と入力し、configファイルを以下のように記載してください。
-  ```
-  Host github.hpe.com
-    HostName github.hpe.com
-    User git
-    Port 22
-    IdentityFile ~/.ssh/github_test
-  ```
+    ```
+    Host github.hpe.com
+      HostName github.hpe.com
+      User git
+      Port 22
+      IdentityFile ~/.ssh/github_test
+    ```
 
-2. Git Bash上で以下を実行し、パスフレーズを入力してください。
-  ```
-  ssh -T git@github.hpe.com
-  ```
+1. Git Bash上で以下を実行し、パスフレーズを入力してください。
+    ```
+    ssh -T git@github.hpe.com
+    ```
 
-3. 以下のような応答が返ってくるかを確認してください。  
-  ```
-  Hi XXXXX! You've successfully authenticated,
-  but GitHub does not provide shell access.
-  ```
+1. 以下のような応答が返ってくるかを確認してください。  
+    ```
+    Hi XXXXX! You've successfully authenticated,
+    but GitHub does not provide shell access.
+    ```
 
 
