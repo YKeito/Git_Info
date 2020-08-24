@@ -24,7 +24,7 @@
 1. Private Key, Public Keyの作成
   1-1. Git Bash上で、.sshというディレクトリがあるかを確認してください。
     ```
-    $ cd; ls -la .ssh/
+    cd; ls -la .ssh/
     ```
     * `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
 
@@ -35,7 +35,7 @@
     
   1-3. 引き続きGit Bashにて、以下のコマンドを打ち込んでください。  
     ```
-    $ ssh-keygen -t rsa -f github_test
+    ssh-keygen -t rsa -f github_test
     ```
 
   1-4. 以下の出力が表示されたことが確認出来たら、任意のパスフレーズを入力し、Enterキーを押下してください(セキュリティ上、入力しても表示はされません)。  
@@ -69,12 +69,12 @@
     
   1-7. .ssh配下にgithub_test、github_test.pubがあるかを確認してください。
     ```
-    $ ls -la 
+    ls -la 
     ```
     
   1-8. sshキーを表示し、表示された鍵(文字列)をコピーしてください。
     ```
-    $ cat github_test.pub
+    cat github_test.pub
     ```
     
 2. Public Keyのupload
@@ -98,7 +98,7 @@
     
   3-2. Git Bash上で以下を実行し、パスフレーズを入力してください。
     ```
-    $ ssh -T git@github.hpe.com
+    ssh -T git@github.hpe.com
     ```
     
   3-3. 以下のような応答が返ってくるかを確認してください。  
