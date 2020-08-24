@@ -23,7 +23,13 @@
 # Git, Git hubの使い方
 ## リモートリポジトリの作成
 初めにローカルリポジトリのデータを保存するためのリモートリポジトリを用意しましょう。
-
+1.  Git hubにログインし、ホームでNewをクリックしてください。
+![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000005.bmp)
+1.  。
+![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000006.bmp)
+![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000007.bmp)
+![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000008.bmp)
+![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000009.bmp)
 
 ## Private Key, Public Keyの作成
 ローカルリポジトリからリモートリポジトリに接続するためにはssh接続をできるようにする必要があります。以下を参考に設定してみましょう。
