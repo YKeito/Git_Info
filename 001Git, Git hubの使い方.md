@@ -27,12 +27,12 @@
     ```
     cd; ls -la .ssh/
     ```
-    * `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
+    `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
 
-  1-2. .sshディレクトリに移動してください。    
-  
+  1-2. .sshディレクトリに移動してください。 
+
     ```
-    cd .ssh
+    cd .ssh/
     ```
     
   1-3. 引き続きGit Bashにて、以下のコマンドを打ち込んでください。  
