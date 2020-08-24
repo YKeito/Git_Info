@@ -159,13 +159,26 @@
     ```
     git push origin master
     ```
-1.  ローカルリポジトリにリモートリポジトリの内容を反映してください。
-    リモートリポジトリに変更内容を保存すると、リモートリポジトリの内容が最新の状態ではないので、内容を更新する必要があります。自分以外の人間がリモートリポジトリに変更を加えたときや、コマンドを使わず、リモートリポジトリから内容を反映させた場合、`git push`の前に以下のコマンドが必要となります。
+1.  ローカルリポジトリにリモートリポジトリの内容を反映してください。　
+    リモートリポジトリの最新変更内容をローカルリポジトリに反映していない場合、以下のようなエラーメッセージが返ってきます。
+    ```
+    To github.com:YKeito/Git_Info.git
+     ! [rejected]        master -> master (fetch first)
+    error: failed to push some refs to 'github.com:YKeito/Git_Info.git'
+    hint: Updates were rejected because the remote contains work that you do
+    hint: not have locally. This is usually caused by another repository pushing
+    hint: to the same ref. You may want to first integrate the remote changes
+    hint: (e.g., 'git pull ...') before pushing again.
+    hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+    ```
+    自分以外の人間がリモートリポジトリに変更を加えたときや、コマンドを使わず、リモートリポジトリから内容を反映させた場合によく返ってくるエラーメッセージです。このようなエラーメッセージが返ってきたら、`git push`の前に以下のコマンドが必要となります。
     ```
     git pull origin master
     ```
+    このコマンドによって、ローカルリポジトリの内容が最新状態になり、`git push`ができるようになります。
 
 1.  以上で、ローカルリポジトリの変更内容をリモートリポジトリに反映の終了です。
+
 ## 5. git コマンドの補足
 1.  ステージングの内容をリセットしてください。
     addした内容を取り消したいとき
