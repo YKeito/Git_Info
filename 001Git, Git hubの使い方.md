@@ -88,8 +88,8 @@
 ## SSH_Configの設定
 1. `vi ~/.ssh/config`と入力し、configファイルを以下のように記載してください。
     ```
-    Host github.hpe.com
-      HostName github.hpe.com
+    Host github.com
+      HostName github.com
       User git
       Port 22
       IdentityFile ~/.ssh/github_test
