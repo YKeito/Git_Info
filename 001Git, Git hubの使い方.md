@@ -22,6 +22,7 @@
 
 # Git, Git hubの使い方
 1. Private Key, Public Keyの作成
+
   1-1. Git Bash上で、.sshというディレクトリがあるかを確認してください。
   
     ```
