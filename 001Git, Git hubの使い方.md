@@ -23,20 +23,20 @@
 # Git, Git hubの使い方
 1. Private Key, Public Keyの作成
 
-  1-1. Git Bash上で、.sshというディレクトリがあるかを確認してください。
+  1. Git Bash上で、.sshというディレクトリがあるかを確認してください。
   
     
     cd; ls -la .ssh/
     
     `ls: cannot access '.ssh/': No such file or directory`と表示された方は、`mkdir .ssh`と打ち込んで.sshディレクトリを作成してください。
 
-  1-2. .sshディレクトリに移動してください。 
+  1. .sshディレクトリに移動してください。 
 
     
     cd .ssh/
     
     
-  1-3. 引き続きGit Bashにて、以下のコマンドを打ち込んでください。  
+  1. 引き続きGit Bashにて、以下のコマンドを打ち込んでください。  
   
     
     ssh-keygen -t rsa -f github_test
