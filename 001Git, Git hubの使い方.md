@@ -9,6 +9,7 @@
 + Git Bashは、Windowsにてコマンドでgitの操作を利用する際に使うターミナル（いわゆる黒い画面）のこと。
   + [Git Bashインストール方法(Winsows OS)](https://eng-entrance.com/git-install)
   + [Git Bashインストール方法(Mac OS)](https://qiita.com/NorsteinBekkler/items/a0622ee6a39d08d61b72)
+  
     *Mac OSはデフォルトでgit bashが入っているが、上を参照にした方がよさそう。
 ## Visual Studio Codeインストール
 + VS Codeとはテキストエディタのこと。機能性や拡張性などが優れており、使いこなせるようになると実装したい機能を手早くプログラムできるようになるので、便利。個人的に便利だと感じているのは、一つの画面で、スクリプトを書きながら、ターミナルを実行できること。複数のスクリプトを並べながら書けること。
