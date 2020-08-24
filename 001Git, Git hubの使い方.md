@@ -25,10 +25,9 @@
 初めにローカルリポジトリのデータを保存するためのリモートリポジトリを用意しましょう。
 1.  Git hubにログインし、ホームでRepositoriesのタブをクリックし、Newをクリックしてください。
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000005.bmp)
-1.  Repository nameに任意の名前を入力し、Public(リンクさえ知っていれば誰でもアクセスできる状態), Private(リンクを知っていても、権限がない場合アクセスできない状態)を選択し、Initialize this repository with a READMEをクリックしてください。
+1.  Repository nameに任意の名前を入力し、Public(リンクさえ知っていれば誰でもアクセスできる状態), Private(リンクを知っていても、権限がない場合アクセスできない状態)を選択し、Initialize this repository with a READMEをクリックし、Create repositoryをクリックしてください。
 ![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000008.bmp)
-1.  
-![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000009.bmp)
+1.  以上でリポジトリ作成完了です。
 
 ## Private Key, Public Keyの作成
 ローカルリポジトリからリモートリポジトリに接続するためにはssh接続をできるようにする必要があります。以下を参考に設定してみましょう。
@@ -115,5 +114,7 @@
     Hi XXXXX! You've successfully authenticated,
     but GitHub does not provide shell access.
     ```
-# 
+## 作成したリモートリポジトリをローカルリポジトリに反映
+1.  
+![test](https://github.com/YKeito/Git_Info/blob/master/Img/2020-08-24-000009.bmp)
 
